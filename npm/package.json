@@ -1,9 +1,18 @@
 {
   "name": "@apiverve/spellingbee",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "description": "Spelling Bee Generator creates word puzzles with 7 letters where players form words using a required center letter.",
   "main": "index.js",
   "types": "index.d.ts",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "mocha",
     "example": "node examples/basic.js"
@@ -14,14 +23,18 @@
     "directory": "npm"
   },
   "keywords": [
-    "spelling bee", "word puzzle", "letter puzzle", "vocabulary game", "NYT puzzle"
+    ""
   ],
-  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "author": {
+    "name": "APIVerve",
+    "email": "hello@apiverve.com",
+    "url": "https://apiverve.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/apiverve/spellingbee-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/spellingbee?utm_source=npm",
+  "homepage": "https://apiverve.com/marketplace/spellingbee?utm_source=npm&utm_medium=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
