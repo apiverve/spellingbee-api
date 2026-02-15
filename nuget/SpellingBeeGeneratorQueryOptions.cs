@@ -12,7 +12,6 @@ namespace APIVerve.API.SpellingBeeGenerator
     {
         /// <summary>
         /// Difficulty: easy, medium, hard (affects word count)
-        /// Example: medium
         /// </summary>
         [JsonProperty("difficulty")]
         public string Difficulty { get; set; }
