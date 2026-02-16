@@ -556,8 +556,9 @@ from apiverve_spellingbeegenerator.apiClient import SpellingbeeAPIClient
 
 api = SpellingbeeAPIClient("[YOUR_API_KEY]")
 
+query = { "difficulty": "medium" }
+
 try:
-    query = { "difficulty": "medium" }
     result = api.execute(query)
     print(result)
 finally:
