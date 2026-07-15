@@ -60,7 +60,8 @@ Using the API is simple. All you have to do is make a request. The API will retu
 
 ```javascript
 var query = {
-  difficulty: "medium"
+  difficulty: "medium",
+  image: false
 };
 
 api.execute(query, function (error, data) {
@@ -80,7 +81,8 @@ You can also use promises to make requests. The API returns a promise that you c
 
 ```javascript
 var query = {
-  difficulty: "medium"
+  difficulty: "medium",
+  image: false
 };
 
 api.execute(query)
@@ -101,7 +103,8 @@ You can also use async/await to make requests. The API returns a promise that yo
 ```javascript
 async function makeRequest() {
     var query = {
-  difficulty: "medium"
+  difficulty: "medium",
+  image: false
 };
 
     try {
@@ -122,346 +125,301 @@ async function makeRequest() {
   "status": "ok",
   "error": null,
   "data": {
-    "centerLetter": "E",
+    "centerLetter": "A",
     "outerLetters": [
-      "U",
-      "N",
+      "C",
       "H",
+      "E",
+      "J",
       "O",
-      "T",
-      "F"
+      "D"
     ],
     "allLetters": [
-      "E",
-      "U",
-      "N",
+      "A",
+      "C",
       "H",
+      "E",
+      "J",
       "O",
-      "T",
-      "F"
+      "D"
     ],
     "difficulty": "medium",
-    "wordCount": 62,
+    "wordCount": 53,
     "pangramCount": 0,
-    "maxPoints": 256,
+    "maxPoints": 200,
     "words": [
       {
-        "word": "HOTTENTOT",
-        "points": 9,
+        "word": "DEADHEADED",
+        "points": 10,
         "isPangram": false
       },
       {
-        "word": "FOOTNOTE",
+        "word": "COHEADED",
         "points": 8,
         "isPangram": false
       },
       {
-        "word": "NONETTO",
+        "word": "DEADHEAD",
+        "points": 8,
+        "isPangram": false
+      },
+      {
+        "word": "HEADACHE",
+        "points": 8,
+        "isPangram": false
+      },
+      {
+        "word": "ACCEDED",
         "points": 7,
         "isPangram": false
       },
       {
-        "word": "UNNETHE",
+        "word": "COACHED",
         "points": 7,
         "isPangram": false
       },
       {
-        "word": "ENFEOFF",
-        "points": 7,
-        "isPangram": false
-      },
-      {
-        "word": "UNOFTEN",
-        "points": 7,
-        "isPangram": false
-      },
-      {
-        "word": "FEOFFEE",
-        "points": 7,
-        "isPangram": false
-      },
-      {
-        "word": "ENTUNE",
+        "word": "ACCEDE",
         "points": 6,
         "isPangram": false
       },
       {
-        "word": "UNTENT",
+        "word": "AHCHOO",
         "points": 6,
         "isPangram": false
       },
       {
-        "word": "EFFETE",
+        "word": "CACHED",
         "points": 6,
         "isPangram": false
       },
       {
-        "word": "TEETEE",
+        "word": "COHEAD",
         "points": 6,
         "isPangram": false
       },
       {
-        "word": "ETHENE",
+        "word": "DADOED",
         "points": 6,
         "isPangram": false
       },
       {
-        "word": "UNTUNE",
+        "word": "DECADE",
         "points": 6,
         "isPangram": false
       },
       {
-        "word": "ONETHE",
+        "word": "DOODAD",
         "points": 6,
         "isPangram": false
       },
       {
-        "word": "TENENT",
+        "word": "HADJEE",
         "points": 6,
         "isPangram": false
       },
       {
-        "word": "TEUTON",
+        "word": "HEADED",
         "points": 6,
         "isPangram": false
       },
       {
-        "word": "NONETT",
-        "points": 6,
-        "isPangram": false
-      },
-      {
-        "word": "NONONE",
-        "points": 6,
-        "isPangram": false
-      },
-      {
-        "word": "NOUTHE",
-        "points": 6,
-        "isPangram": false
-      },
-      {
-        "word": "TOFFEE",
-        "points": 6,
-        "isPangram": false
-      },
-      {
-        "word": "TENTH",
+        "word": "AAHED",
         "points": 5,
         "isPangram": false
       },
       {
-        "word": "NONET",
+        "word": "ACHED",
         "points": 5,
         "isPangram": false
       },
       {
-        "word": "OFTEN",
+        "word": "ACHOO",
         "points": 5,
         "isPangram": false
       },
       {
-        "word": "THEFT",
+        "word": "ADDED",
         "points": 5,
         "isPangram": false
       },
       {
-        "word": "TENNE",
+        "word": "AHEAD",
         "points": 5,
         "isPangram": false
       },
       {
-        "word": "FEOFF",
+        "word": "CACAO",
         "points": 5,
         "isPangram": false
       },
       {
-        "word": "TENNO",
+        "word": "CACHE",
         "points": 5,
         "isPangram": false
       },
       {
-        "word": "TENNU",
+        "word": "CAECA",
         "points": 5,
         "isPangram": false
       },
       {
-        "word": "HOTEN",
+        "word": "COACH",
         "points": 5,
         "isPangram": false
       },
       {
-        "word": "FOEHN",
+        "word": "COCOA",
         "points": 5,
         "isPangram": false
       },
       {
-        "word": "HUNTE",
+        "word": "DACHA",
         "points": 5,
         "isPangram": false
       },
       {
-        "word": "EFFET",
+        "word": "HADED",
         "points": 5,
         "isPangram": false
       },
       {
-        "word": "FETTE",
+        "word": "HODAD",
         "points": 5,
         "isPangram": false
       },
       {
-        "word": "HENEN",
+        "word": "JADED",
         "points": 5,
         "isPangram": false
       },
       {
-        "word": "TEETH",
+        "word": "JEHAD",
         "points": 5,
         "isPangram": false
       },
       {
-        "word": "NONNE",
-        "points": 5,
-        "isPangram": false
-      },
-      {
-        "word": "UNETH",
-        "points": 5,
-        "isPangram": false
-      },
-      {
-        "word": "FONNE",
-        "points": 5,
-        "isPangram": false
-      },
-      {
-        "word": "TENON",
-        "points": 5,
-        "isPangram": false
-      },
-      {
-        "word": "TONNE",
-        "points": 5,
-        "isPangram": false
-      },
-      {
-        "word": "TENET",
-        "points": 5,
-        "isPangram": false
-      },
-      {
-        "word": "HENT",
+        "word": "ACED",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "TUNE",
+        "word": "ACHE",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "TENE",
+        "word": "AHED",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "HONE",
+        "word": "AJEE",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "TUET",
+        "word": "CACA",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "HEFT",
+        "word": "CADE",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "TOTE",
+        "word": "CECA",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "FONE",
+        "word": "CHAD",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "FEET",
+        "word": "CHAO",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "TETE",
+        "word": "COCA",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "TONE",
+        "word": "CODA",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "TENT",
+        "word": "DACE",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "ETHE",
+        "word": "DADA",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "NONE",
+        "word": "DADO",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "HETE",
+        "word": "DEAD",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "THEE",
+        "word": "EACH",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "TEEN",
+        "word": "HADE",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "HOTE",
+        "word": "HADJ",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "FETE",
+        "word": "HAED",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "THEN",
+        "word": "HAHA",
         "points": 1,
         "isPangram": false
       },
       {
-        "word": "NOTE",
+        "word": "HAJJ",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "HEAD",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "JADE",
         "points": 1,
         "isPangram": false
       }
     ],
-    "html": "<html><head><title>Spelling Bee</title><style>body {font-family: Arial, sans-serif; padding: 20px; max-width: 500px; margin: 0 auto; text-align: center;}h1 {color: #F9A825;}.honeycomb {display: flex; flex-wrap: wrap; justify-content: center; max-width: 200px; margin: 30px auto;}.hex {width: 60px; height: 52px; background: #E0E0E0; margin: 2px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);}.hex.center {background: #F9A825; color: white;}.stats {margin: 20px 0; font-size: 14px; color: #666;}.rules {text-align: left; background: #FFF8E1; padding: 15px; border-radius: 10px; margin-top: 20px;}.rules h3 {margin-top: 0; color: #F9A825;}.rules ul {margin: 0; padding-left: 20px;}</style></head><body><h1>Spelling Bee</h1><div class='honeycomb'><div class='hex center'>E</div><div class='hex'>U</div><div class='hex'>N</div><div class='hex'>H</div><div class='hex'>O</div><div class='hex'>T</div><div class='hex'>F</div></div><div class='stats'>62 words | 256 possible points</div><div class='rules'><h3>How to Play:</h3><ul><li>Create words using the letters shown</li><li>Words must contain the center letter (yellow)</li><li>Words must be at least 4 letters long</li><li>Letters can be used more than once</li><li>4-letter words = 1 point</li><li>Longer words = 1 point per letter</li><li>Pangrams (use all 7 letters) = +7 bonus points</li></ul></div></body></html>",
+    "html": "<html><head><title>Spelling Bee</title><style>body {font-family: Arial, sans-serif; padding: 20px; max-width: 500px; margin: 0 auto; text-align: center;}h1 {color: #F9A825;}.honeycomb {display: flex; flex-wrap: wrap; justify-content: center; max-width: 200px; margin: 30px auto;}.hex {width: 60px; height: 52px; background: #E0E0E0; margin: 2px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);}.hex.center {background: #F9A825; color: white;}.stats {margin: 20px 0; font-size: 14px; color: #666;}.rules {text-align: left; background: #FFF8E1; padding: 15px; border-radius: 10px; margin-top: 20px;}.rules h3 {margin-top: 0; color: #F9A825;}.rules ul {margin: 0; padding-left: 20px;}</style></head><body><h1>Spelling Bee</h1><div class='honeycomb'><div class='hex center'>A</div><div class='hex'>C</div><div class='hex'>H</div><div class='hex'>E</div><div class='hex'>J</div><div class='hex'>O</div><div class='hex'>D</div></div><div class='stats'>53 words | 200 possible points</div><div class='rules'><h3>How to Play:</h3><ul><li>Create words using the letters shown</li><li>Words must contain the center letter (yellow)</li><li>Words must be at least 4 letters long</li><li>Letters can be used more than once</li><li>4-letter words = 1 point</li><li>Longer words = 1 point per letter</li><li>Pangrams (use all 7 letters) = +7 bonus points</li></ul></div></body></html>",
     "image": {
-      "imageName": "48f9b67c-cf9f-47bd-96cb-b7f5c3f60d7b.png",
+      "imageName": "0f8f8f2c-ac7d-46f9-b5fc-e2d777117f13.png",
       "format": ".png",
-      "downloadURL": "https://storage.googleapis.com/apiverve.appspot.com/spellingbee/48f9b67c-cf9f-47bd-96cb-b7f5c3f60d7b.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1764735775&Signature=jGHjZXw1saM0Bb6sUaoi%2BwG5FCIr7VrUWVqQC5tZrk28WgwwWVpOHeObKUJGHYN4JJGKEyp2Hrhl2wuyZ0UfR6W8SSfQlxE2SAAsHAIvKhe%2BIybHYit0swMt2bLItAZ0tfcYBHb%2ByheIKabR5LBF2ot4R0kIpUNbg8Y5mxObeuSio9uXSuvgd8WKt8JfU2cx9Y6%2BHw2%2FmeV3lz8zrBhGjGAq0b78F5ULzJlRLhVoz8vuPZFb6dI3bLUm7zJQPKRe9e01%2BW%2FXUUBqluSVaXmCj6uYBiSeO2HQHbHpsa2tmWg%2FrL4ry0gbX11%2BIfzWHwrN%2FUtIILkNK3CJXqOfDgNcBA%3D%3D",
-      "expires": 1764735775342
+      "downloadURL": "https://storage.googleapis.com/apiverve/APIData/spellingbee/0f8f8f2c-ac7d-46f9-b5fc-e2d777117f13.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1766010561&Signature=cHvKHU7wb0RwJKVI6FGIS8%2B8%2BencmsoWEuH%2FT2cQsUjPTY%2FFLhSzipEyHex5HCEg5q8jEiRB3wZDXF9lyONQTVSNdZp0Xpm6Fw69tZZDvCeHePwa1v0h0rktZ6PLSbRswtr0vlHDZL3JPBl7i%2FsxM8QxTdGDOs7cyULy3d9qEyuPPIEDkOF1cnQce2qThIhZ%2BHieQNsBVX193NhyeCrgfRVQVPiFYo4ngSbOrMJKpVm2aSbtykG6Hyw%2B8RnQqkBqA5JB8XaB2ESBg0ZU8ldZUNoHd4cMoC2Oz4rI5FkLuQ2tzju9FVsxsCXiVvJCPd9jsWOlhQ7T1NVp%2FwV107k38w%3D%3D",
+      "expires": 1766010561052
     }
   }
 }
