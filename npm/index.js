@@ -30,7 +30,7 @@ class spellingbeeWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/spellingbee';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"difficulty":{"type":"string","required":false,"default":"medium"}};
+        this.validationRules = {"difficulty":{"type":"string","required":false,"default":"medium"},"image":{"type":"boolean","required":false,"default":false}};
     }
 
     /**
