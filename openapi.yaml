@@ -29,6 +29,13 @@ paths:
           required: false
           description: 'Difficulty: easy, medium, hard (affects word count)'
           example: medium
+        - name: image
+          in: query
+          schema:
+            type: boolean
+          required: false
+          description: Set to true to generate a downloadable puzzle image
+          example: true
       responses:
         '200':
           description: Successful Response
