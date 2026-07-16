@@ -25,6 +25,9 @@ namespace APIVerve.API.SpellingBeeGenerator
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -42,13 +45,13 @@ namespace APIVerve.API.SpellingBeeGenerator
         public string Difficulty { get; set; }
 
         [JsonProperty("wordCount")]
-        public long WordCount { get; set; }
+        public long? WordCount { get; set; }
 
         [JsonProperty("pangramCount")]
-        public long PangramCount { get; set; }
+        public long? PangramCount { get; set; }
 
         [JsonProperty("maxPoints")]
-        public long MaxPoints { get; set; }
+        public long? MaxPoints { get; set; }
 
         [JsonProperty("words")]
         public Word[] Words { get; set; }
@@ -72,7 +75,7 @@ namespace APIVerve.API.SpellingBeeGenerator
         public Uri DownloadUrl { get; set; }
 
         [JsonProperty("expires")]
-        public long Expires { get; set; }
+        public long? Expires { get; set; }
     }
 
     public partial class Word
@@ -81,9 +84,21 @@ namespace APIVerve.API.SpellingBeeGenerator
         public string WordWord { get; set; }
 
         [JsonProperty("points")]
-        public long Points { get; set; }
+        public long? Points { get; set; }
 
         [JsonProperty("isPangram")]
-        public bool IsPangram { get; set; }
+        public bool? IsPangram { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
