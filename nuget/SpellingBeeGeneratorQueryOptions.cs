@@ -15,5 +15,11 @@ namespace APIVerve.API.SpellingBeeGenerator
         /// </summary>
         [JsonProperty("difficulty")]
         public string Difficulty { get; set; }
+
+        /// <summary>
+        /// Set to true to generate a downloadable puzzle image
+        /// </summary>
+        [JsonProperty("image")]
+        public bool? Image { get; set; }
     }
 }
