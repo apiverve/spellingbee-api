@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/spellingbee",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "Spelling Bee Generator creates word puzzles with 7 letters where players form words using a required center letter.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "spelling bee", "word puzzle", "letter puzzle", "vocabulary game", "NYT puzzle"
+    "spelling bee api", "spelling bee generator", "spelling bee json", "spelling bee puzzle generator", "word puzzle"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/spellingbee-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/spellingbee?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/spellingbee?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
