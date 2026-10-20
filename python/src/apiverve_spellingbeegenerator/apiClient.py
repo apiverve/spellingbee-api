@@ -1,6 +1,6 @@
 import re
-from typing import Dict, Optional, Any
-from dataclasses import dataclass, List
+from typing import Dict, Optional, Any, List
+from dataclasses import dataclass
 import requests
 
 
@@ -24,7 +24,8 @@ class ValidationError(SpellingbeeAPIClientError):
 class SpellingbeeAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
-        "difficulty": {"type": "string", "required": False, "default": "medium"}
+        "difficulty": {"type": "string", "required": False, "default": "medium"},
+        "image": {"type": "boolean", "required": False, "default": False}
     }
 
     # Format validation patterns
