@@ -1,13 +1,13 @@
-# [Spelling Bee Generator API](https://apiverve.com/marketplace/spellingbee?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Spelling Bee Generator API](https://apiverve.com/marketplace/spellingbee?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
 Spelling Bee Generator creates word puzzles with 7 letters where players form words using a required center letter.
 
 The Spelling Bee Generator API provides a simple, reliable way to integrate spelling bee generator functionality into your applications. Built for developers who need production-ready spelling bee generator capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/spellingbee?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/spellingbee?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/spellingbee?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/spellingbee?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/spellingbee-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Spelling Bee Generator API](https://apiverve.com/marketplace/spellingbee?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Spelling Bee Generator API](https://apiverve.com/marketplace/spellingbee?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/spellingbee](https://docs.apiverve.com/ref/spellingbee)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -191,11 +191,323 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Spelling Bee Generator API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "centerLetter": "A",
+    "outerLetters": [
+      "C",
+      "H",
+      "E",
+      "J",
+      "O",
+      "D"
+    ],
+    "allLetters": [
+      "A",
+      "C",
+      "H",
+      "E",
+      "J",
+      "O",
+      "D"
+    ],
+    "difficulty": "medium",
+    "wordCount": 53,
+    "pangramCount": 0,
+    "maxPoints": 200,
+    "words": [
+      {
+        "word": "DEADHEADED",
+        "points": 10,
+        "isPangram": false
+      },
+      {
+        "word": "COHEADED",
+        "points": 8,
+        "isPangram": false
+      },
+      {
+        "word": "DEADHEAD",
+        "points": 8,
+        "isPangram": false
+      },
+      {
+        "word": "HEADACHE",
+        "points": 8,
+        "isPangram": false
+      },
+      {
+        "word": "ACCEDED",
+        "points": 7,
+        "isPangram": false
+      },
+      {
+        "word": "COACHED",
+        "points": 7,
+        "isPangram": false
+      },
+      {
+        "word": "ACCEDE",
+        "points": 6,
+        "isPangram": false
+      },
+      {
+        "word": "AHCHOO",
+        "points": 6,
+        "isPangram": false
+      },
+      {
+        "word": "CACHED",
+        "points": 6,
+        "isPangram": false
+      },
+      {
+        "word": "COHEAD",
+        "points": 6,
+        "isPangram": false
+      },
+      {
+        "word": "DADOED",
+        "points": 6,
+        "isPangram": false
+      },
+      {
+        "word": "DECADE",
+        "points": 6,
+        "isPangram": false
+      },
+      {
+        "word": "DOODAD",
+        "points": 6,
+        "isPangram": false
+      },
+      {
+        "word": "HADJEE",
+        "points": 6,
+        "isPangram": false
+      },
+      {
+        "word": "HEADED",
+        "points": 6,
+        "isPangram": false
+      },
+      {
+        "word": "AAHED",
+        "points": 5,
+        "isPangram": false
+      },
+      {
+        "word": "ACHED",
+        "points": 5,
+        "isPangram": false
+      },
+      {
+        "word": "ACHOO",
+        "points": 5,
+        "isPangram": false
+      },
+      {
+        "word": "ADDED",
+        "points": 5,
+        "isPangram": false
+      },
+      {
+        "word": "AHEAD",
+        "points": 5,
+        "isPangram": false
+      },
+      {
+        "word": "CACAO",
+        "points": 5,
+        "isPangram": false
+      },
+      {
+        "word": "CACHE",
+        "points": 5,
+        "isPangram": false
+      },
+      {
+        "word": "CAECA",
+        "points": 5,
+        "isPangram": false
+      },
+      {
+        "word": "COACH",
+        "points": 5,
+        "isPangram": false
+      },
+      {
+        "word": "COCOA",
+        "points": 5,
+        "isPangram": false
+      },
+      {
+        "word": "DACHA",
+        "points": 5,
+        "isPangram": false
+      },
+      {
+        "word": "HADED",
+        "points": 5,
+        "isPangram": false
+      },
+      {
+        "word": "HODAD",
+        "points": 5,
+        "isPangram": false
+      },
+      {
+        "word": "JADED",
+        "points": 5,
+        "isPangram": false
+      },
+      {
+        "word": "JEHAD",
+        "points": 5,
+        "isPangram": false
+      },
+      {
+        "word": "ACED",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "ACHE",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "AHED",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "AJEE",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "CACA",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "CADE",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "CECA",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "CHAD",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "CHAO",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "COCA",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "CODA",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "DACE",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "DADA",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "DADO",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "DEAD",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "EACH",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "HADE",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "HADJ",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "HAED",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "HAHA",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "HAJJ",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "HEAD",
+        "points": 1,
+        "isPangram": false
+      },
+      {
+        "word": "JADE",
+        "points": 1,
+        "isPangram": false
+      }
+    ],
+    "html": "<html><head><title>Spelling Bee</title><style>body {font-family: Arial, sans-serif; padding: 20px; max-width: 500px; margin: 0 auto; text-align: center;}h1 {color: #F9A825;}.honeycomb {display: flex; flex-wrap: wrap; justify-content: center; max-width: 200px; margin: 30px auto;}.hex {width: 60px; height: 52px; background: #E0E0E0; margin: 2px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);}.hex.center {background: #F9A825; color: white;}.stats {margin: 20px 0; font-size: 14px; color: #666;}.rules {text-align: left; background: #FFF8E1; padding: 15px; border-radius: 10px; margin-top: 20px;}.rules h3 {margin-top: 0; color: #F9A825;}.rules ul {margin: 0; padding-left: 20px;}</style></head><body><h1>Spelling Bee</h1><div class='honeycomb'><div class='hex center'>A</div><div class='hex'>C</div><div class='hex'>H</div><div class='hex'>E</div><div class='hex'>J</div><div class='hex'>O</div><div class='hex'>D</div></div><div class='stats'>53 words | 200 possible points</div><div class='rules'><h3>How to Play:</h3><ul><li>Create words using the letters shown</li><li>Words must contain the center letter (yellow)</li><li>Words must be at least 4 letters long</li><li>Letters can be used more than once</li><li>4-letter words = 1 point</li><li>Longer words = 1 point per letter</li><li>Pangrams (use all 7 letters) = +7 bonus points</li></ul></div></body></html>",
+    "image": {
+      "imageName": "0f8f8f2c-ac7d-46f9-b5fc-e2d777117f13.png",
+      "format": ".png",
+      "downloadURL": "https://storage.googleapis.com/apiverve/APIData/spellingbee/0f8f8f2c-ac7d-46f9-b5fc-e2d777117f13.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1766010561&Signature=cHvKHU7wb0RwJKVI6FGIS8%2B8%2BencmsoWEuH%2FT2cQsUjPTY%2FFLhSzipEyHex5HCEg5q8jEiRB3wZDXF9lyONQTVSNdZp0Xpm6Fw69tZZDvCeHePwa1v0h0rktZ6PLSbRswtr0vlHDZL3JPBl7i%2FsxM8QxTdGDOs7cyULy3d9qEyuPPIEDkOF1cnQce2qThIhZ%2BHieQNsBVX193NhyeCrgfRVQVPiFYo4ngSbOrMJKpVm2aSbtykG6Hyw%2B8RnQqkBqA5JB8XaB2ESBg0ZU8ldZUNoHd4cMoC2Oz4rI5FkLuQ2tzju9FVsxsCXiVvJCPd9jsWOlhQ7T1NVp%2FwV107k38w%3D%3D",
+      "expires": 1766010561052
+    }
+  }
 }
 ```
 
@@ -203,7 +515,7 @@ All responses are JSON with this structure:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Spelling Bee Generator API](https://apiverve.com/marketplace/spellingbee?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Spelling Bee Generator API](https://apiverve.com/marketplace/spellingbee?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
