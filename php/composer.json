@@ -1,7 +1,7 @@
 {
     "name": "apiverve/spellingbee",
     "description": "Spelling Bee Generator creates word puzzles with 7 letters where players form words using a required center letter.",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "type": "library",
     "license": "MIT",
     "authors": [
